@@ -1,0 +1,1 @@
+window.open('./docs/index.html','_blank')
