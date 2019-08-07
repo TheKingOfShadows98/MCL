@@ -1,8 +1,67 @@
 /* Este son los estilos para los articulos de Libres como el pensamiento */
-body{
-    background-color: rgb(240, 240, 240);
-    font-family: 'Times New Roman', Times, serif;
+#libres-pensamientos
+{
+    padding-top: 2px;
+background-color: rgb(227, 227, 255)
 }
-.articulo-lp{
-    display:flexbox;
+.container-lp
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-family: sans-serif;
+    background: rgb(250,250,250);
+}
+.head-container-lp
+{
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    padding: 0px;
+}
+.titulo-lp
+{
+    width: 500px;
+    display: inherit;
+    text-align: center;
+    padding: 0 0 0 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.numero-lp
+{
+    width: 50px;
+    display: inherit;
+    font-size: 12pt;
+    text-align: left;
+    background: rgb(200,200,250);
+}
+.autor-lp
+{
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.fecha-lp
+{
+    width: 100%;
+    text-align: center;
+    margin: 2px auto;
+    text-transform: capitalize;
+    font-style: italic;
+    color: gray;
+}
+.contenido-lp
+{
+    text-align: justify;
+    border: 1px;
+    font-size: 14pt;
+    border-radius: 5px;
+    padding: 5px 20px;
 }
