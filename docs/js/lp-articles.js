@@ -3,20 +3,28 @@ console.log(section);
 
 function newArticle(info){
     let article = document.createElement('ARTICLE');
+    article.classList.add('container-lp');
     let title = document.createElement('H3');
+    title.classList.add('titulo-lp');
     title.innerHTML = info.title;
+    let div_text = document.createElement('DIV');
+    div_text.classList.add('head-container-lp');
     let author = document.createElement('H4');
+    author.classList.add('autor-lp');
     author.innerHTML = info.author;
     let date = document.createElement('H5');
+    date.classList.add('fecha-lp');
     date.innerHTML = info.date;
     let number = document.createElement('H3');
-    number.innerHTML = info.number;
+    number.innerHTML = 'N°' + info.number;
+    number.classList.add('numero-lp');
     let content = document.createElement('P');
+    content.classList.add('contenido-lp');
     content.innerHTML = info.content;
-    article.classList.add('container-lp');
-    title.classList.add('titulo-lp');
-    article.appendChild(title);
-    article.appendChild(number);
+    
+    div_text.appendChild(title);
+    div_text.appendChild(number);
+    article.appendChild(div_text);
     article.appendChild(author);
     article.appendChild(date);
     article.appendChild(content);
